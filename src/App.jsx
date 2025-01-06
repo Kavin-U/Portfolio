@@ -3,30 +3,28 @@ import MouseGlow from "./components/MouseGlow";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Project from "./pages/Project";
-import { FaInstagram,FaGithub,FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   return (
     <>
-      <div className="flex">
+      <div className="block lg:flex bg-slate-900">
         {/* Left Panel */}
-        <div className="relative w-[40%]">
+        <div className="relative w-[100%] lg:w-[40%]">
           <MouseGlow />
-          <div className="h-screen bg-slate-900 text-white p-10">
-            <div className="p-10">
-              <h1 className="text-[60px]">Kavin U</h1>
+          <div className="lg:h-screen bg-slate-900 text-white py-8 px-6 md:p-10">
+            <div className="lg:p-10">
+              <h1 className="text-3xl mb-2 md:text-[60px]">Kavin U</h1>
               <h2 className="text-md">MERN Stack Engineer</h2>
               <p className="mt-4 opacity-70">
                 I build Scalable Web Applications &<br /> Dynamic User
                 Interfaces in an Efficient way.
               </p>
-              
-              <nav className="mt-10">
+              <nav className="mt-10 lg:block hidden">
                 <ul className="space-y-4">
                   <li>
-                    
                     <a
-                      href="#about"  
+                      href="#about"
                       className="text-white opacity-70 hover:opacity-100 cursor-pointer"
                     >
                       About
@@ -34,7 +32,7 @@ function App() {
                   </li>
                   <li>
                     <a
-                      href="#project" 
+                      href="#project"
                       className="text-white opacity-70 hover:opacity-100 cursor-pointer"
                     >
                       Skills & Projects
@@ -42,25 +40,43 @@ function App() {
                   </li>
                   <li>
                     <a
-                      href="#experience" 
+                      href="#experience"
                       className="text-white opacity-70 hover:opacity-100 cursor-pointer"
                     >
                       Experience
                     </a>
                   </li>
                 </ul>
-                <div className="flex mt-20 gap-8 text-3xl "> 
-                    <a href="https://github.com/Kavin-U" target="_blank" className="opacity-50 hover:opacity-95"><FaGithub/></a>
-                    <a href="www.linkedin.com/in/kavin-u" target="_blank" className="opacity-50 hover:opacity-95"><FaLinkedin/></a>
-                    <a href="https://www.instagram.com/_kavin_u/" target="_blank" className="opacity-50 hover:opacity-95"><FaInstagram/></a>
-                </div>
               </nav>
+              <div className="flex mt-20 gap-8 text-3xl ">
+                <a
+                  href="https://github.com/Kavin-U"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-95"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="www.linkedin.com/in/kavin-u"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-95"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  href="https://www.instagram.com/_kavin_u/"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-95"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Right Panel with Scrollable Sections */}
-        <div className="bg-slate-900 text-white w-[60%] h-screen p-4 overflow-y-auto">
+        <div className="bg-slate-900 text-white w-[100%] lg:w-[60%] lg:h-screen lg:p-4 lg:overflow-y-auto">
           <section id="about">
             <About />
           </section>
@@ -70,6 +86,14 @@ function App() {
           <section id="experience">
             <Experience />
           </section>
+          <footer className="h-[200px] py-10 px-2 lg:mt-4 lg:mb-4 bg-slate-900">
+            <p className="opacity-50">
+              Loosely designed and coded in Visual Studio Code by yours
+              truly. Built with React.js and Tailwind CSS, deployed with Vercel.
+              All text is set in the Inter typeface.
+            </p>
+            <p className="opacity-50 text-center py-5">2025 &copy; Kavin U</p>
+          </footer>
         </div>
       </div>
     </>

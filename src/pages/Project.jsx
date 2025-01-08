@@ -81,7 +81,7 @@ export default function Project() {
               <img
                 src={project.image}
                 alt="project_img"
-                className="lg:w-[200px] lg:h-[200px] w-[50%] h-[50%] mx-auto rounded-md cursor-pointer"
+                className="lg:w-[200px] lg:h-[200px] w-[100%] h-[50%] mx-auto rounded-md cursor-pointer"
                 onClick={() => setSelectedImage(project.image)} // Open the modal with the image
               />
               <div>

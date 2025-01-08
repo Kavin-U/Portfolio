@@ -68,7 +68,7 @@ export default function Project() {
             <div
               id={key}
               key={key}
-              className={`flex flex-wrap lg:flex-nowrap w-[95%] rounded-lg gap-5 p-4 transition-all duration-300 ${
+              className={`flex flex-wrap mx-auto lg:flex-nowrap w-[95%] rounded-lg gap-5 p-4 transition-all duration-300 ${
                 hoveredProject === key ? "bg-gray-800 bg-opacity-40" : ""
               } ${
                 hoveredProject === null || hoveredProject === key

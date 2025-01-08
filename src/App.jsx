@@ -83,11 +83,11 @@ function App() {
           <section id="project">
             <Project />
           </section>
-          <section id="experience">
+          <section className="w-[100%]" id="experience">
             <Experience />
           </section>
-          <footer className="h-[200px] py-10 px-2 lg:mt-4 lg:mb-4 bg-slate-900">
-            <p className="opacity-50">
+          <footer className="w-[100%] h-[200px] py-10 px-2 lg:mt-4 lg:mb-4 bg-slate-900">
+            <p className="opacity-50 text-justify">
               Loosely designed and coded in Visual Studio Code by yours
               truly. Built with React.js and Tailwind CSS, deployed with Vercel.
               All text is set in the Inter typeface.

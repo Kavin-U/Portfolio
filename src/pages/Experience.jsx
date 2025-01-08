@@ -7,15 +7,15 @@ export default function Experience() {
 
   return (<>
     <h1 className="w-[100%] p-4 mb-5 bg-slate-900 lg:bg-transparent z-50 bg-opacity-95 backdrop-blur-sm lg:text-center text-left lg:font-bold font-semibold sticky top-0 lg:static uppercase lg:text-2xl">Experience</h1>
-    <div className="flex flex-col w-[80%] lg:w-[100%] mx-auto gap-6">
+    <div className="flex flex-col w-[80%] mx-auto lg:w-[100%] gap-6">
       {/* Internship Card */}
       <a
         href="https://github.com/Kavin-U/Certificate/blob/main/Kavin%20U%20_Intern.pdf"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer"        
       >
         <div
-          className={`flex flex-wrap lg:flex-nowrap gap-10 p-4 w-[95%] rounded-lg transition-all duration-300 ${
+          className={`flex flex-wrap lg:flex-nowrap mx-auto gap-10 p-4 w-[95%] rounded-lg transition-all duration-300 ${
             hoveredItem === "intern"
               ? "bg-gray-800 bg-opacity-40"
               : hoveredItem === null
@@ -32,7 +32,7 @@ export default function Experience() {
               alt="internship"
             />
           </div>
-          <div className="w-[80%]">
+          <div className="lg:w-[80%]">
             <h1 className="text-xl font-semibold">
               Cubiksoft Technologies | Internship
             </h1>
@@ -53,7 +53,7 @@ export default function Experience() {
         rel="noopener noreferrer"
       >
         <div
-          className={`flex flex-wrap lg:flex-nowrap gap-10 p-4 w-[95%] rounded-lg transition-all duration-300 ${
+          className={`flex flex-wrap lg:flex-nowrap mx-auto gap-10 p-4 w-[95%] rounded-lg transition-all duration-300 ${
             hoveredItem === "certificate"
               ? "bg-gray-800 bg-opacity-40"
               : hoveredItem === null
@@ -70,7 +70,7 @@ export default function Experience() {
               alt="course-certificate"
             />
           </div>
-          <div className="w-[80%]">
+          <div className="lg:w-[80%]">
             <h1 className="text-xl font-semibold">Qtree Technologies | MERN Stack Course</h1>
             <p className="opacity-55">JAN 2024 - JUN 2024</p>
             <p>Course Completion Certificate</p>

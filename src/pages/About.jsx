@@ -4,7 +4,7 @@ import myImg4 from "../assets/myImage4.png";
 export default function About() {
   return (<>
   <div className="w-[100%] p-4 bg-slate-900 uppercase backdrop-blur-sm font-semibold z-50 bg-opacity-95 lg:hidden visible sticky top-0">About</div>
-    <div className="lg:mb-40 w-[90%] lg:w-[100%] lg:mt-20 mb-10 mx-auto">
+    <div className="lg:my-36 w-[90%] lg:w-[100%] lg:mt-20 mb-10 mx-auto">
       <div className="lg:flex gap-7">
         <img
           src={myImg4}

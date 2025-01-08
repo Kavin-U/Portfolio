@@ -48,7 +48,7 @@ function App() {
                   </li>
                 </ul>
               </nav>
-              <div className="flex mt-20 gap-8 text-3xl ">
+              <div className="flex mt-10 lg:mt-20 gap-8 text-3xl ">
                 <a
                   href="https://github.com/Kavin-U"
                   target="_blank"
@@ -86,13 +86,13 @@ function App() {
           <section className="w-[100%]" id="experience">
             <Experience />
           </section>
-          <footer className="w-[100%] h-[200px] py-10 px-2 lg:mt-4 lg:mb-4 bg-slate-900">
+          <footer className="w-[100%] pt-10 px-2 lg:mt-4 lg:mb-4 bg-slate-900">
             <p className="opacity-50 text-justify">
               Loosely designed and coded in Visual Studio Code by yours
               truly. Built with React.js and Tailwind CSS, deployed with Vercel.
               All text is set in the Inter typeface.
             </p>
-            <p className="opacity-50 text-center py-5">2025 &copy; Kavin U</p>
+            <p className="opacity-50 text-center pt-5 pb-2 lg:pb-0">2025 &copy; Kavin U</p>
           </footer>
         </div>
       </div>

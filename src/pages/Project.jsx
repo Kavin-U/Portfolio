@@ -62,7 +62,7 @@ export default function Project() {
             ))}
           </ul>
         </div>
-        <div className="mt-5 flex flex-col gap-10">
+        <div className="mt-5 flex flex-col gap-8">
           <h1 className="text-xl">Some of my projects</h1>
           {Object.entries(projects).map(([key, project]) => (
             <div
@@ -85,12 +85,12 @@ export default function Project() {
                 onClick={() => setSelectedImage(project.image)} // Open the modal with the image
               />
               <div>
-                <div className="flex gap-3 mb-4">
+                <div className="flex flex-wrap lg:flex-nowrap gap-3 mb-4">
                   <a
                     href={project.Code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-md border-blue-500 border-2 hover:bg-blue-500 hover:text-black"
+                    className="w-[100%] text-center sm:w-auto sm:px-4 py-2 rounded-md border-blue-500 border-2 hover:bg-blue-500 hover:text-black"
                   >
                     CODE
                   </a>
@@ -99,7 +99,7 @@ export default function Project() {
                       href={project.Demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-md border-blue-500 border-2 hover:bg-blue-500 hover:text-black"
+                      className="w-[100%] text-center sm:w-auto sm:px-4 py-2 rounded-md border-blue-500 border-2 hover:bg-blue-500 hover:text-black"
                     >
                       DEMO
                     </a>
@@ -109,7 +109,7 @@ export default function Project() {
                         e.preventDefault();
                       }}
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-md"
+                      className="w-[100%] text-center sm:w-auto sm:px-4 py-2 rounded-md"
                     >
                       NO DEMO
                     </a>

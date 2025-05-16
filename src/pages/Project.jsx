@@ -17,9 +17,9 @@ export default function Project() {
     "ExpressJs",
     "Redux",
     "Github",
+    "Git Desktop",
     "MongoDB",
     "MySql",
-    "Java",
     "RestAPI",
   ];
 
@@ -27,7 +27,7 @@ export default function Project() {
     Weather_Project: {
       Name: "Weather Forcast App",
       Code: "https://github.com/Kavin-U/WeatherAPP",
-      Demo: "https://weather-application-csy8.onrender.com",
+      Demo: "https://weatherdemo-app.netlify.app/",
       image: weath_img,
       Description:
         "A simple API project with a Node.js backend server that uses a Weather API to provide location-based weather forecasting. It also includes location access to automatically detect the user's location and display the corresponding weather details.",

@@ -1,5 +1,5 @@
 import React from "react";
-import myImg4 from "../assets/myImage4.png";
+import myImg4 from "../assets/MyImage.png";
 
 export default function About() {
   return (<>
@@ -9,7 +9,7 @@ export default function About() {
         <img
           src={myImg4}
           alt="my-img"
-          className="lg:hidden block z-0 mx-auto w-[200px] h-[350] mb-2 lg:mb-0 scroll-mt-10 lg:scroll-mt-24 lg:w-[350px] lg:h-[450px] lg:mt-[-60px] rounded-xl drop"
+          className="lg:hidden block z-0 mx-auto w-[200px] h-[350] mb-2 lg:mb-0 scroll-mt-10 lg:scroll-mt-24 lg:w-[350px] lg:h-[450px] lg:mt-[-20px] rounded-xl"
         />
         <div className="lg:flex lg:flex-col text-justify lg:gap-5">
           <p>
@@ -33,7 +33,7 @@ export default function About() {
         <img
           src={myImg4}
           alt="my-img"
-          className="hidden lg:block w-[350px] h-[450px] mt-[-60px] rounded-xl drop"
+          className="hidden lg:block w-[300px] h-[400px] mt-[-20px] rounded-xl drop"
         />
       </div>
     </div>
